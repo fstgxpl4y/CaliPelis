@@ -1,3 +1,4 @@
+package model;
 public class Peliculas {
     private int calificacion;
     private String pelicula;

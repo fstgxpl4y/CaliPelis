@@ -1,3 +1,4 @@
+package model;
 public class Calificaciones {
     protected int cantidadCalificaciones;
     protected int cantidadDispo;
@@ -27,7 +28,43 @@ public class Calificaciones {
     public void espacioDisponible(Boolean calificaciones){
         this.espacioDis = calificaciones;
 
-        } 
+    } 
+
+
+    public boolean espacioDisponible() {
+        return this.espacioDis;
     }
 
+    public void consultarCalificaciones() {
+        System.out.println("Calificacion registrada: " + this.calificaciones);
+    }
 
+    public int consultarCalificacion(int numeroPelicula) {
+        return this.calificaciones;
+    }
+
+    public boolean modificarCalificacion(int numeroPelicula, int nuevaCalificacion) {
+        this.calificaciones = nuevaCalificacion;
+        return true;
+    }
+
+    public double calcularPromedio() {
+        return (double) this.calificaciones;
+    }
+
+    public int obtenerCalMasAlta() {
+        return this.calificaciones;
+    }
+
+    public int obtenerCalMasBaja() {
+        return this.calificaciones;
+    }
+
+    public int cantidadCalificaciones() {
+        return this.cantidadCalificaciones;
+    }
+
+    public int espaciosDisponibles() {
+        return this.cantidadDispo;
+    }
+}

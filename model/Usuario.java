@@ -1,3 +1,4 @@
+package model;
 public class Usuario {
     protected String nombre;
     protected String usuario;
