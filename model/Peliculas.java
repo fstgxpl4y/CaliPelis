@@ -1,17 +1,24 @@
 package model;
+
 public class Peliculas {
     private int calificacion;
-    private String pelicula;
     private String namePelicula;
     private String idPelicula;
     private int numeroPelicula;
 
-    public void pelicula(String pelicula) {
-        this.namePelicula = pelicula;
+    public void pelicula(String namePelicula, String idPelicula, int numeroPelicula) {
+        this.namePelicula = namePelicula;
+        this.idPelicula = idPelicula;
+        this.numeroPelicula = numeroPelicula;
     }
 
-    public void pelicula(String idPelicula, int numeroPelicula) {
-        this.namePelicula = idPelicula;
+    public void pelicula(String namePelicula, String idPelicula) {
+        this.namePelicula = namePelicula;
+        this.idPelicula = idPelicula;
+    }
+
+    public void pelicula(String namePelicula, int numeroPelicula) {
+        this.namePelicula = namePelicula;
         this.numeroPelicula = numeroPelicula;
     }
 
@@ -21,10 +28,6 @@ public class Peliculas {
 
     public String getNamePelicula() {
         return namePelicula;
-    }
-
-    public String Pelicula() {
-        return pelicula;
     }
 
     public String getIdPelicula() {
